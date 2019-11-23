@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid: auto / 250px 1fr;
+  font-family: sans-serif;
+}
+
+aside {
+  /* background-color: rgb(245, 245, 245); */
+  background-color: #232323;
+  color: #fff;
+
+  padding: 2em 1em;
+
+  position: fixed;
+  height: 100%;
+  width: 250px;
+}
+
+/* === LISTA === */
+ol {
+  counter-reset: item;
+  padding: ;
+  background-color: red;
+}
+.ol__padding {
+  padding: 0;
+}
+li {
+  display: block;
+
+  background-color: blue;
+}
+li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item;
+}
+
+main {
+  grid-column: 2;
+}
+
+section {
+  background-image: linear-gradient(black, white);
+  min-height: 100vh;
+}
+
+iframe {
+  height: 100vh;
+  width: 100%;
+}
