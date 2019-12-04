@@ -171,4 +171,10 @@ header {
 
 section {
   /* background-image: linear-gradient(white, black); */
+  /* margin-top: 2em; */
+  /* padding: 6em 10em;
+  outline: 3px solid yellow;
+  outline-offset: -0.5em; */
+
+  /* skapa article i varje section för underrubrik med margin i section för att skapa mer centrerat innehåll!  */
 }
