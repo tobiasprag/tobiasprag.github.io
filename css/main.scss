@@ -30,7 +30,7 @@ h2 {
 }
 
 p {
-  max-width: 50ch;
+  max-width: 60ch;
   line-height: 1.6;
   color: map-get($colors, f-color);
 }
@@ -38,6 +38,11 @@ p {
 a {
   color: map-get($colors, link);
   text-transform: uppercase;
+
+  &:hover,
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 p,
@@ -46,8 +51,9 @@ a {
 }
 
 p,
-li {
-  font-size: 1.4em;
+li,
+a {
+  font-size: 1.4rem;
 }
 
 html {
@@ -81,8 +87,8 @@ body {
   position: fixed;
   right: 2%;
   bottom: 3%;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   object-fit: cover;
   border-radius: 50%;
 
@@ -108,18 +114,36 @@ aside {
     &__item {
       padding-bottom: 0.5rem;
     }
-
-    &__link:hover,
-    &__link:active {
-      opacity: 0.5;
-    }
   }
 }
 
 .main {
-  padding: 10vw 0 0 4em;
+  padding: 10vw 4em 0 4em;
 
   &__sec {
-    max-width: 50%;
+    max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    &__sec {
+      max-width: 100%;
+    }
+  }
+
+  p {
+    max-width: 80ch;
+  }
+  aside {
+    // display: none;
+
+    .nav {
+      transform: translateX(-100%);
+    }
+  }
+
+  body {
+    grid: auto / 10px 1fr;
   }
 }
