@@ -3,139 +3,233 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <input type="checkbox" id="toggle" class="test" checked />
-    <label for="toggle" class="label-toggle transition">
-      <svg
-        fill="#232323"
-        height="32px"
-        id="Layer_1"
-        style="enable-background:new 0 0 32 32;"
-        version="1.1"
-        viewBox="0 0 32 32"
-        width="32px"
-        xml:space="preserve"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-      >
-        <path
-          d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
-        />
-      </svg>
-    </label>
-    <div id="wrapper" class="wrapper transition">
-      <aside class="transition">
-        <nav>
-          <ul>
-            <li class="li__padding">
-              <a href="#intro"><b>1. </b>Inledning</a>
-            </li>
-
-            <li class="li__padding">
-              <a href="#html"><b>2. </b>HTML</a>
-            </li>
-            <ul>
-              <li>
-                <a href="#"><b>2.1 </b>li</a>
-              </li>
-              <li>
-                <a href="#"><b>2.2 </b>li</a>
-              </li>
-              <li>
-                <a href="#"><b>2.3 </b>li</a>
-              </li>
-              <li>
-                <a href="#"><b>2.4 </b>li</a>
-              </li>
-            </ul>
-
-            <li class="li__padding">
-              <a href="#css"><b>3. </b>CSS</a>
-            </li>
-            <ul>
-              <li><b>3.1 </b>li</li>
-              <li><b>3.2 </b>li</li>
-              <li><b>3.3 </b>li</li>
-              <li><b>3.4 </b>li</li>
-            </ul>
-          </ul>
-          <!-- <ol class="ol__padding">
-            <li>Start</li>
-            <li>
-              <a href="#start">HTML</a>
-              <ol>
-                <li><a href="#start">Link</a></li>
-                <li><a href="#start">Link</a></li>
-                <li><a href="#start">Link</a></li>
-              </ol>
-            </li>
-            <li>
-              <a href="#two">CSS</a>
-              <ol>
-                <li><a href="#two">Link</a></li>
-                <li><a href="#two">Link</a></li>
-                <li><a href="#two">Link</a></li>
-              </ol>
-            </li>
-
-            <li>
-              <a href="#two">Kapitel 2</a>
-              <ol>
-                <li>sub li element</li>
-                <li>sub li element</li>
-                <li>sub li element</li>
-              </ol>
-            </li>
-
-            <li>
-              <a href="#two">Kapitel 2</a>
-              <ol>
-                <li>sub li element</li>
-                <li>sub li element</li>
-                <li>sub li element</li>
-              </ol>
-            </li>
-
-            <li>
-              <a href="#two">Kapitel 2</a>
-              <ol>
-                <li>sub li element</li>
-                <li>sub li element</li>
-                <li>sub li element</li>
-              </ol>
-            </li>
-
-            <li>
-              <a href="#two">Kapitel 2</a>
-              <ol>
-                <li>sub li element</li>
-                <li>sub li element</li>
-                <li>sub li element</li>
-              </ol>
-            </li>
-
-            <li>
-              <a href="#two">Kapitel 2</a>
-              <ol>
-                <li>sub li element</li>
-                <li>sub li element</li>
-                <li>sub li lololo</li>
-              </ol>
-            </li>
-          </ol> -->
-        </nav>
-      </aside>
-      <main class="transition">
-        <header>
-          <div class="header--wrapper"></div>
-        </header>
-        <section id="intro">section1</section>
-        <section id="html">section2</section>
-      </main>
+    <!-- SPARA IFALL BG MÅSTE TILLBAKA TILL BODY <div class="bg">
+      <img class="bg__img" src="img/bg.svg" alt="background" />
+    </div> -->
+    <div class="up">
+      <a class="up__link" href="#main">
+        <img class="up__img" src="img/arrow.png" alt="arrow up" />
+      </a>
     </div>
+
+    <aside>
+      <nav class="nav">
+        <h2 class="nav__heading">Innehåll</h2>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">aside scroll</a>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#">blur</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">carousel</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">cv</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">footer</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">form</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">hamburger</a></li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">hero, nav, parallax</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">hide, show, jquery</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">hover button</a>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#">JS_labb</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">matris</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">menu</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">menu 3</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">menu test</a></li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">menu test 2</a>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#">menu2</a></li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">over-under</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">powell responsive</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">responsive flex</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">responsive no mq</a>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#">site</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">slides</a></li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">template_Hyper</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">template_responsive</a>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#">Tidningen</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">waves</a></li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">webbtävlingen</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <main id="main" class="main">
+      <div class="bg">
+        <img class="bg__img" src="img/bg.svg" alt="background" />
+      </div>
+      <header class="main__header">
+        <h1>Exempel för webbutveckling</h1>
+      </header>
+      <section class="main__sec">
+        <h2 class="main__heading--2">aside scroll</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">blur</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">carousel</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">cv</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">footer</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">form</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">hamburger</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+      </section>
+      <section class="main__sec">
+        <h2 class="main__heading--2">hero, nav, parallax</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">hide, show, jquery</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">hover button</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">JS_labb</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">matris</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">menu</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">menu 3</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+      </section>
+      <section class="main__sec">
+        <h2 class="main__heading--2">menu test</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">menu2</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">over-under</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">Powell_responsive</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">responsive flex</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">responsive no mq</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">site</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+      </section>
+      <section class="main__sec">
+        <h2 class="main__heading--2">slides</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">template_hyper</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">template_responsive</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">Tidningen</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">waves</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">webbtävlingen</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <h2 class="main__heading--2">menu test 2</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+      </section>
+    </main>
   </body>
 </html>

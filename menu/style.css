@@ -178,3 +178,34 @@ section {
 
   /* skapa article i varje section för underrubrik med margin i section för att skapa mer centrerat innehåll!  */
 }
+
+/* test dots */
+
+.menu {
+  width: 40px;
+  height: 40px;
+
+  margin: 5em;
+  position: relative;
+  transition: ease 250ms;
+}
+
+.menu:hover .pop {
+  visibility: visible;
+  opacity: 1;
+}
+
+.pop {
+  background-color: rgba(23, 23, 23, 0.5);
+  padding: 0.5em;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: ease-in-out 250ms;
+  border: solid 1px #232323;
+  border-radius: 5px;
+}
+.dots {
+  width: 100%;
+  fill: red;
+}
