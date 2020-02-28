@@ -11,7 +11,7 @@ $font: (
 
 * {
   box-sizing: border-box;
-  //   transition: ease-in-out 250ms;
+  transition: ease-in-out 250ms;
 }
 
 h1 {
@@ -38,6 +38,7 @@ p {
 a {
   color: map-get($colors, link);
   text-transform: uppercase;
+  text-decoration: none;
 
   &:hover,
   &:active {
@@ -120,8 +121,20 @@ aside {
 .main {
   padding: 10vw 4em 0 4em;
 
+  &__header {
+    margin: 0 0 10em 0;
+  }
+
   &__sec {
     max-width: 75%;
+  }
+
+  &__heading--2:not(:first-child) {
+    margin: 2.5em 0 0 0;
+  }
+
+  &__text {
+    margin-bottom: 0;
   }
 }
 

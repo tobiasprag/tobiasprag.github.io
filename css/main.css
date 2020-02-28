@@ -2,6 +2,8 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: ease-in-out 250ms;
+  transition: ease-in-out 250ms;
 }
 
 h1 {
@@ -28,6 +30,7 @@ p {
 a {
   color: #29b6f6;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 a:hover, a:active {
@@ -111,8 +114,20 @@ aside .nav__item {
   padding: 10vw 4em 0 4em;
 }
 
+.main__header {
+  margin: 0 0 10em 0;
+}
+
 .main__sec {
   max-width: 75%;
+}
+
+.main__heading--2:not(:first-child) {
+  margin: 2.5em 0 0 0;
+}
+
+.main__text {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 600px) {
