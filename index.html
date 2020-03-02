@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- SPARA IFALL BG MÅSTE TILLBAKA TILL BODY <div class="bg">
@@ -84,31 +84,47 @@
         <h1>Exempel för webbutveckling</h1>
       </header>
       <section class="main__sec">
-        <h2 class="main__heading--2">aside scroll</h2>
+        <h2 class="main__heading--2">Aside med scroll</h2>
+        <div class="main__tag">
+          <span class="main__tags">scroll</span>
+          <span class="main__tags">aside</span>
+          <span class="main__tags">main</span>
+        </div>
         <p class="main__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
-          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+          Aside till vänster tillsammans med länkar. Main scrollar fritt från
+          aside och använder en mjuk scroll.
         </p>
+
         <a
           target="_blank"
           class="main__link"
           href="examples/aside-scroll/index.html"
           >Link</a
         >
-
-        <h2 class="main__heading--2">blur</h2>
+        <h2 class="main__heading--2">Blur</h2>
+        <div class="main__tag">
+          <span class="main__tags">blur</span>
+          <span class="main__tags">position</span>
+          <span class="main__tags">absolute</span>
+        </div>
         <p class="main__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
-          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+          Hantera bilder och bakgrunder tillsammans med text och blur.
+          Vanligtvis kan det vara svårt att skapa effekten blur när det kommer
+          till bild och text samtidigt. Här hittar du knep för att använda
+          position absolute för att lösa det.
         </p>
+
         <a target="_blank" class="main__link" href="examples/blur/index.html"
           >Link</a
         >
-
-        <h2 class="main__heading--2">carousel</h2>
+        <h2 class="main__heading--2">Carousel</h2>
+        <div class="main__tag">
+          <span class="main__tags">Carousel</span>
+          <span class="main__tags">Bildspel</span>
+          <span class="main__tags">Kevin Powell</span>
+        </div>
         <p class="main__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
-          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+          Ett bildspel med prickar och pilar för navigation. Arbetet kommer från Kevin Powell's youtube-kanal. Sidan innehåller delvis javascript eller jquery. <h3 class="main__heading--3">Är troligtvis ofärdig. </h3>
         </p>
         <a
           target="_blank"
@@ -116,29 +132,38 @@
           href="examples/carousel/index.html"
           >Link</a
         >
-
-        <h2 class="main__heading--2">cv</h2>
+      </section>
+        <section class="main__sec">
+        <h2 class="main__heading--2">CV</h2>
+        <div class="main__tag">
+          <span class="main__tags">Grid</span>
+          <span class="main__tags">Psuedo-element</span>
+        </div>
         <p class="main__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
-          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+          Enkel sida för att dela upp innehåll på olika sidor. Inget avancerat men kan hjälpa med både grid och ::after (psuedo-element).
         </p>
         <a target="_blank" class="main__link" href="examples/cv/index.html"
           >Link</a
         >
 
-        <h2 class="main__heading--2">footer</h2>
+        <h2 class="main__heading--2">Footer</h2>
+        <div class="main__tag">
+          <span class="main__tags">Footer</span>
+        </div>
         <p class="main__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
-          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
-        </p>
+        Exempel på en footer för en webbsida. Position fixed används för att skapa effekten när man scrollar. Innehållet är indelat i olika kollumner vilket get sidan sitt utseende. Arbetet med kollumner i CSS är inte perfekt och går att göras bättre. All lorem ipsum på sidan är till för utfyllnad för att tvinga fram effekten från scroll. 
+</p>
         <a target="_blank" class="main__link" href="examples/footer/index.html"
           >Link</a
         >
 
-        <h2 class="main__heading--2">form</h2>
+        <h2 class="main__heading--2">Form</h2>
+        <div class="main__tag">
+          <span class="main__tags">Flex</span>
+          <span class="main__tags">Responsiv</span>
+        </div>
         <p class="main__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
-          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+          Ett exempel på ett formulär. Sidan bygger på flex och är där med responsiv utan media queries. Exemplet går därför att använda när det kommer till responsivitet. Allt "viktigt" finns OVANFÖR kommentaren "SITL FÖR SIDAN". 
         </p>
         <a target="_blank" class="main__link" href="examples/form/index.html"
           >Link</a
@@ -316,6 +341,7 @@
         >
 
         <h2 class="main__heading--2">template_hyper</h2>
+        <h3 class="main__heading--3">FUNKAR EJ</h3>
         <p class="main__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
           facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
