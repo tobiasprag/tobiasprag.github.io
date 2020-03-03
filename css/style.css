@@ -61,10 +61,10 @@ aside .nav__item {
 .main__tags::after {
   content: "";
   position: absolute;
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
   border: 1px solid rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
+  border-radius: 4px;
   right: 1px;
   top: 1px;
   background-color: white;
@@ -143,8 +143,9 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-  p {
+  .main p {
     max-width: 80ch;
+    margin-bottom: 1em;
   }
 }
 

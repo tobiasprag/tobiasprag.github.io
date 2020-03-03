@@ -68,7 +68,10 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-  p {
-    max-width: 80ch;
+  .main {
+    p {
+      max-width: 80ch;
+      margin-bottom: 1em;
+    }
   }
 }
