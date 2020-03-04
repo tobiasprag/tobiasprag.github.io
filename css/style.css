@@ -199,6 +199,31 @@ body {
   height: 100%;
 }
 
+.test {
+  position: absolute;
+  z-index: 999;
+}
+
+.label {
+  color: red;
+  font-size: 25px;
+  z-index: 999;
+  left: 100px;
+}
+
+#checkbox {
+  display: none;
+}
+
+#checkbox:checked ~ .label {
+  color: green;
+  left: 100px;
+}
+
+#checkbox:checked ~ .aside {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
   body {
     grid: auto / 10px 1fr;

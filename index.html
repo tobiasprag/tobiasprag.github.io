@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Guider, Webbutveckling 1 & 2</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
   </head>
   <body>
+    <div class="test">
+      <input type="checkbox" id="checkbox" />
+      <label for="checkbox" class="label">X</label>
+    </div>
     <!-- SPARA IFALL BG MÅSTE TILLBAKA TILL BODY <div class="bg">
       <img class="bg__img" src="img/bg.svg" alt="background" />
     </div> -->
@@ -20,7 +25,8 @@
       <nav class="nav">
         <h2 class="nav__heading">Innehåll</h2>
         <ul class="nav__list">
-          <li>        <h3 class="main__heading--3">Länkar funkar ej för tillfället</h3>
+          <li>
+            <h3 class="main__heading--3">Länkar funkar ej för tillfället</h3>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#">aside scroll</a>
@@ -86,6 +92,61 @@
         <h1>Exempel för webbutveckling</h1>
       </header>
       <section class="main__sec">
+        <h2 class="main__heading--2">Menyer</h2>
+        <h2 class="main__heading--2">menu 1</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <a target="_blank" class="main__link" href="examples/menu/index.html"
+          >Link</a
+        >
+
+        <h2 class="main__heading--2">menu 2</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <a target="_blank" class="main__link" href="examples/menu2/index.html"
+          >Link</a
+        >
+
+        <h2 class="main__heading--2">menu 3</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <a target="_blank" class="main__link" href="examples/menu 3/index.html"
+          >Link</a
+        >
+
+        <h2 class="main__heading--2">menu test</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <a
+          target="_blank"
+          class="main__link"
+          href="examples/menu test/index.html"
+          >Link</a
+        >
+
+        <h2 class="main__heading--2">menu test 2</h2>
+        <p class="main__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+        </p>
+        <a
+          target="_blank"
+          class="main__link"
+          href="examples/menu test 2/index.html"
+          >Link</a
+        >
+      </section>
+
+      <section class="menu__sec">
+        <h2 class="main__heading--2">Övrigt</h2>
         <h2 class="main__heading--2">Aside med scroll</h2>
         <div class="main__tag">
           <span class="main__tags">scroll</span>
@@ -126,8 +187,12 @@
           <span class="main__tags">Kevin Powell</span>
         </div>
         <p class="main__text">
-          Ett bildspel med prickar och pilar för navigation. Arbetet kommer från Kevin Powell's youtube-kanal. Sidan innehåller delvis javascript eller jquery. <h3 class="main__heading--3">Är troligtvis ofärdig. </h3>
+          Ett bildspel med prickar och pilar för navigation. Arbetet kommer från
+          Kevin Powell's youtube-kanal. Sidan innehåller delvis javascript eller
+          jquery.
         </p>
+        <h3 class="main__heading--3">Är troligtvis ofärdig.</h3>
+
         <a
           target="_blank"
           class="main__link"
@@ -135,14 +200,15 @@
           >Link</a
         >
       </section>
-        <section class="main__sec">
+      <section class="main__sec">
         <h2 class="main__heading--2">CV</h2>
         <div class="main__tag">
           <span class="main__tags">Grid</span>
           <span class="main__tags">Psuedo-element</span>
         </div>
         <p class="main__text">
-          Enkel sida för att dela upp innehåll på olika sidor. Inget avancerat men kan hjälpa med både grid och ::after (psuedo-element).
+          Enkel sida för att dela upp innehåll på olika sidor. Inget avancerat
+          men kan hjälpa med både grid och ::after (psuedo-element).
         </p>
         <a target="_blank" class="main__link" href="examples/cv/index.html"
           >Link</a
@@ -153,8 +219,12 @@
           <span class="main__tags">Footer</span>
         </div>
         <p class="main__text">
-        Exempel på en footer för en webbsida. Position fixed används för att skapa effekten när man scrollar. Innehållet är indelat i olika kollumner vilket get sidan sitt utseende. Arbetet med kollumner i CSS är inte perfekt och går att göras bättre. All lorem ipsum på sidan är till för utfyllnad för att tvinga fram effekten från scroll. 
-</p>
+          Exempel på en footer för en webbsida. Position fixed används för att
+          skapa effekten när man scrollar. Innehållet är indelat i olika
+          kollumner vilket get sidan sitt utseende. Arbetet med kollumner i CSS
+          är inte perfekt och går att göras bättre. All lorem ipsum på sidan är
+          till för utfyllnad för att tvinga fram effekten från scroll.
+        </p>
         <a target="_blank" class="main__link" href="examples/footer/index.html"
           >Link</a
         >
@@ -165,7 +235,10 @@
           <span class="main__tags">Responsiv</span>
         </div>
         <p class="main__text">
-          Ett exempel på ett formulär. Sidan bygger på flex och är där med responsiv utan media queries. Exemplet går därför att använda när det kommer till responsivitet. Allt "viktigt" finns OVANFÖR kommentaren "SITL FÖR SIDAN". 
+          Ett exempel på ett formulär. Sidan bygger på flex och är där med
+          responsiv utan media queries. Exemplet går därför att använda när det
+          kommer till responsivitet. Allt "viktigt" finns OVANFÖR kommentaren
+          "SITL FÖR SIDAN".
         </p>
         <a target="_blank" class="main__link" href="examples/form/index.html"
           >Link</a
@@ -233,46 +306,6 @@
           facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
         </p>
         <a target="_blank" class="main__link" href="examples/matris/idnex.html"
-          >Link</a
-        >
-
-        <h2 class="main__heading--2">menu</h2>
-        <p class="main__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
-          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
-        </p>
-        <a target="_blank" class="main__link" href="examples/menu/index.html"
-          >Link</a
-        >
-
-        <h2 class="main__heading--2">menu 3</h2>
-        <p class="main__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
-          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
-        </p>
-        <a target="_blank" class="main__link" href="examples/menu 3/index.html"
-          >Link</a
-        >
-      </section>
-      <section class="main__sec">
-        <h2 class="main__heading--2">menu test</h2>
-        <p class="main__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
-          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
-        </p>
-        <a
-          target="_blank"
-          class="main__link"
-          href="examples/menu test/index.html"
-          >Link</a
-        >
-
-        <h2 class="main__heading--2">menu2</h2>
-        <p class="main__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
-          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
-        </p>
-        <a target="_blank" class="main__link" href="examples/menu2/index.html"
           >Link</a
         >
 
@@ -397,18 +430,6 @@
           target="_blank"
           class="main__link"
           href="examples/Webbtävling/upp1.html"
-          >Link</a
-        >
-
-        <h2 class="main__heading--2">menu test 2</h2>
-        <p class="main__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
-          facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
-        </p>
-        <a
-          target="_blank"
-          class="main__link"
-          href="examples/menu test 2/index.html"
           >Link</a
         >
       </section>
