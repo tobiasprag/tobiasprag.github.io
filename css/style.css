@@ -205,23 +205,29 @@ body {
 }
 
 .label {
-  color: red;
+  color: green;
   font-size: 25px;
   z-index: 999;
-  left: 100px;
+  left: 18ch;
+  top: 1em;
+  position: absolute;
+  font-family: "Roboto";
 }
 
 #checkbox {
   display: none;
+  position: absolute;
 }
 
 #checkbox:checked ~ .label {
-  color: green;
-  left: 100px;
+  color: red;
+  left: 2ch;
 }
 
-#checkbox:checked ~ .aside {
-  display: none;
+#checkbox:checked ~ aside {
+  -webkit-transform: translateX(-93%);
+          transform: translateX(-93%);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 @media screen and (max-width: 600px) {
