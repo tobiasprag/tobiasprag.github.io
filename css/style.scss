@@ -52,31 +52,31 @@ body {
   }
 }
 
-.test {
-  position: absolute;
-  // left: 300px;
-  z-index: 999;
-}
+// .test {
+//   position: absolute;
+//   // left: 300px;
+//   z-index: 999;
+// }
 
-.label {
-  color: red;
-  font-size: 25px;
-  z-index: 999;
-  left: 100px;
-}
+// .label {
+//   color: red;
+//   font-size: 25px;
+//   z-index: 999;
+//   left: 100px;
+// }
 
-#checkbox {
-  display: none;
-}
+// #checkbox {
+//   display: none;
+// }
 
-#checkbox:checked ~ .label {
-  color: green;
-  left: 100px;
-}
+// #checkbox:checked ~ .label {
+//   color: green;
+//   left: 100px;
+// }
 
-#checkbox:checked ~ .aside {
-  display: none;
-}
+// #checkbox:checked ~ .aside {
+//   display: none;
+// }
 
 @media screen and (max-width: 600px) {
   body {
