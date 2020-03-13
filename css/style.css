@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Caladea:400,700|Roboto:400,700,900&display=swap");
 aside {
   background: #fafafa;
+  -webkit-transition: ease-in-out 250ms;
+  transition: ease-in-out 250ms;
 }
 
 aside .nav {
@@ -29,12 +31,12 @@ aside .nav__item {
   padding: 10vw 4em 0 4em;
 }
 
-.main__header {
-  margin: 0 0 10em 0;
+.main__wrapper {
+  max-width: 75%;
 }
 
-.main__sec {
-  max-width: 75%;
+.main__header {
+  margin: 0 0 10em 0;
 }
 
 .main__sec:not(:first-of-type) {
@@ -68,6 +70,10 @@ aside .nav__item {
   right: 1px;
   top: 1px;
   background-color: white;
+}
+
+.sec__wrapper {
+  padding: 2em 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -152,8 +158,6 @@ a {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: ease-in-out 250ms;
-  transition: ease-in-out 250ms;
 }
 
 html {
@@ -205,13 +209,34 @@ body {
 }
 
 .label {
-  color: green;
+  color: red;
   font-size: 25px;
   z-index: 999;
-  left: 18ch;
-  top: 1em;
-  position: absolute;
+  left: 15ch;
+  top: .7em;
+  position: fixed;
   font-family: "Roboto";
+  -webkit-transition: ease-in-out 250ms;
+  transition: ease-in-out 250ms;
+  cursor: pointer;
+  border: 2px solid red;
+  border-radius: 50%;
+  width: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.label:hover {
+  color: white;
+  border: 2px solid white;
+  background: red;
 }
 
 #checkbox {
@@ -220,8 +245,15 @@ body {
 }
 
 #checkbox:checked ~ .label {
-  color: red;
+  color: green;
   left: 2ch;
+  border: 2px solid green;
+}
+
+#checkbox:checked ~ .label:hover {
+  background: green;
+  color: white;
+  border: 2px solid white;
 }
 
 #checkbox:checked ~ aside {

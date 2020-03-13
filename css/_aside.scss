@@ -2,6 +2,8 @@
 
 aside {
   background: map-get($colors, aside);
+    transition: ease-in-out 250ms;
+
 
   .nav {
     padding: 1em 2em;

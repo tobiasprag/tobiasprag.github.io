@@ -7,7 +7,7 @@
 
 * {
   box-sizing: border-box;
-  transition: ease-in-out 250ms;
+  // transition: ease-in-out 250ms;
 }
 
 html {
@@ -59,13 +59,26 @@ body {
 }
 
 .label {
-  color: green;
+  color: red;
   font-size: 25px;
   z-index: 999;
-  left: 18ch;
-  top: 1em;
-  position: absolute;
+  left: 15ch;
+  top: .7em;
+  position: fixed;
   font-family: map-get($font, body);
+  transition: ease-in-out 250ms;
+  cursor: pointer;
+
+  border: 2px solid red;
+  border-radius: 50%;
+  width: 34px;
+  @include flexCenter;
+
+  &:hover {
+    color: white;
+    border: 2px solid white;
+    background: red;
+  }
 }
 
 #checkbox {
@@ -74,8 +87,16 @@ body {
 }
 
 #checkbox:checked ~ .label {
-  color: red;
+  color: green;
   left: 2ch;
+
+  border: 2px solid green;
+
+  &:hover {
+    background: green;
+    color: white;
+    border: 2px solid white;
+  }
 }
 
 #checkbox:checked ~ aside {
