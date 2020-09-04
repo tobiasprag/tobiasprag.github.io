@@ -1,266 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans&display=swap" rel="stylesheet"> 
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guider, Webbutveckling 1 & 2</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
 </head>
+
 <body>
+  <!-- SPARA IFALL BG MÅSTE TILLBAKA TILL BODY <div class="bg">
+      <img class="bg__img" src="img/bg.svg" alt="background" />
+    </div> -->
+  <div class="up">
+    <a class="up__link" href="#main">
+      <img class="up__img" src="img/arrow.png" alt="arrow up" />
+    </a>
+  </div>
+
+  <input type="checkbox" id="checkbox" />
+  <label for="checkbox" class="label">X</label>
+
+  <aside>
     <nav class="nav">
-        <div class="nav__wrapper">
-            <h1 class="nav__logo menu_white">
-                Webbutveckling
-            </h1>
-
-            <!-- <div> -->
-                <input type="checkbox" id="checkbox" class="nav__input nav__mobile" />
-                <label for="checkbox" class="label nav__button nav__mobile">
-                    <!-- <img src="img/bars-solid.svg" alt="menu icon" class="nav__icon"> -->
-                    <svg class="nav__icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
-                    <!-- https://fontawesome.com/icons/bars?style=solid -->
-                </label>
-                
-                <ul class="nav__links" id="list">
-                    <li class="nav__link"><a href="#section__one">Webb 1</a></li>
-                    <li class="nav__link"><a href="#section__two">Webb 2</a></li>
-                    <li class="nav__link"><a href="#section__three">Tidigare</a></li>
-                </ul>
-            <!-- </div> -->
-
-        </div>
+      <h2 class="nav__heading">Innehåll</h2>
+      <ul class="nav__list">
+        <li>
+          <h3 class="main__heading--3">Länkar funkar ej för tillfället</h3>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="#main__heading--meny">Meny</a></li>
+        <li class="nav__item"><a class="nav__link" href="#main__heading--responsivitet">Responsivitet</a></li>
+        <li class="nav__item"><a class="nav__link" href="#main__heading--ovrigt">Övrigt</a></li>
+        <!-- <li class="nav__item"><a class="nav__link" href="#">cv</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">footer</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">form</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">hamburger</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">hero, nav, parallax</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">hide, show, jquery</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">hover button</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">JS_labb</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">matris</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">menu</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">menu 3</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">menu test</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">menu test 2</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">menu2</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">over-under</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">powell responsive</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">responsive flex</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">responsive no mq</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">site</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">slides</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">template_Hyper</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">template_responsive</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Tidningen</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">waves</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">webbtävlingen</a></li> -->
+      </ul>
     </nav>
-    <header class="header" id="header">
-        <div class="header__wrapper">
-            <ul class="header__list">
-                <li class="header__item"><a href="#" class="header__link">Classroom</a></li>
-                <li class="header__item"><a href="#" class="header__link">Uppgifter</a></li>
-                <li class="header__item"><a href="#" class="header__link">Länkar</a></li>
-            </ul>
+  </aside>
+
+  <main id="main" class="main">
+    <div class="bg">
+      <img class="bg__img" src="img/bg.svg" alt="background image" />
+    </div>
+
+    <div class="main__wrapper">
+
+      <header class="main__header">
+        <h1>Exempel för webbutveckling</h1>
+      </header>
+
+
+      <section class="main__sec">
+
+        <h2 id="main__heading--menyer" class="main__heading--2">Menyer</h2>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">menu 1</h2>
+          <div class="main__tag">
+            <span class="main__tags">Tävling</span>
+            <span class="main__tags">Koncept</span>
+          </div>
+          <p class="main__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+            facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+          </p>
+          <a target="_blank" class="main__link" href="examples/menu/index.html">Link</a>
         </div>
-    </header>
-    <main>
-        <section class="section" id="section__one">
-            <div class="section__wrapper">
-                <h2 class="section__title">Klass 1</h2>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                        <div class="card__bg"></div>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-            </div>
-        </section>
-        <section class="section" id="section__two">
-            <div class="section__wrapper">
 
-                <h2 class="section__title">Klass 2</h2>
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">menu 2</h2>
+          <div class="main__tag">
+            <span class="main__tags">Tävling</span>
+            <span class="main__tags">Koncept</span>
+          </div>
+          <p class="main__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+            facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+          </p>
+          <a target="_blank" class="main__link" href="examples/menu2/index.html">Link</a>
+        </div>
 
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-            </div>
-        </section>
-        <section class="section" id="section__three">
-            <div class="section__wrapper">
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">menu 3</h2>
+          <div class="main__tag">
+            <span class="main__tags">Tävling</span>
+            <span class="main__tags">Koncept</span>
+          </div>
+          <p class="main__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+            facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+          </p>
+          <a target="_blank" class="main__link" href="examples/menu 3/index.html">Link</a>
+        </div>
 
-                <h2 class="section__title">Klass 3</h2>
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">menu test</h2>
+          <div class="main__tag">
+            <span class="main__tags">Tävling</span>
+            <span class="main__tags">Koncept</span>
+          </div>
+          <p class="main__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+            facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+          </p>
+          <a target="_blank" class="main__link" href="examples/menu test/index.html">Link</a>
+        </div>
 
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-                <a href="#" class="card__link">
-                    <div class="section__card">
-                        <h2 class="card__title">Förnamn Efternamn</h2>
-                        <p class="card__text">first-last.friakalmar.se</p>
-                    </div>
-                </a>
-            </div>
-        </section>
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">menu test 2</h2>
+          <div class="main__tag">
+            <span class="main__tags">Tävling</span>
+            <span class="main__tags">Koncept</span>
+          </div>
+          <p class="main__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet a
+            facere mollitia iusto modi, fugiat ullam quaerat molestiae enim.
+          </p>
+          <a target="_blank" class="main__link" href="examples/menu test 2/index.html">Link</a>
+        </div>
 
-        <!-- <iframe src="http://www.joel-johansson.friakalmar.se/" frameborder="0" scrolling="no"></iframe> -->
-    </main>
-    <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
+        <h2 id="main__heading--responsivitet" class="main__heading--2">responsivitet</h2>
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">template_responsive</h2>
+          <div class="main__tag">
+            <span class="main__tags">Responsiv</span>
+            <span class="main__tags">Media Query</span>
+          </div>
+          <p class="main__text">
+            Enkel sida som visar hur du kan göra din sida responsiv med hjälp av media queries.
+          </p>
+          <a target="_blank" class="main__link" href="examples/template_responsive/index.html">Link</a>
+        </div>
 
-		<script src="js/script.js"></script>
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">responsive no mq</h2>
+          <div class="main__tag">
+            <span class="main__tags">Responsiv</span>
+            <span class="main__tags">GRID</span>
+          </div>
+          <p class="main__text">
+            Vill du göra en sida responsiv så finns det andra sätt än media queries. I det här exempelet
+            kan du ser hur det kan funka med GRID.
+          </p>
+          <a target="_blank" class="main__link" href="examples/responsive no media query/index.html">Link</a>
+        </div>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">responsive flex</h2>
+          <div class="main__tag">
+            <span class="main__tags">Responsiv</span>
+            <span class="main__tags">FLEX</span>
+          </div>
+          <p class="main__text">
+            Vill du göra en sida responsiv så finns det andra sätt än media queries. I det här exempelet
+            kan du ser hur det kan funka med FLEX.
+          </p>
+          <a target="_blank" class="main__link" href="examples/responsice flex/index.html">Link</a>
+        </div>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">Powell_responsive</h2>
+          <div class="main__tag">
+            <span class="main__tags">Kevin Powell</span>
+            <span class="main__tags">Responsiv</span>
+          </div>
+          <p class="main__text">Ofärdig kopia av Kevin Powell's responsiva sida från YouTube.</p>
+          <a target="_blank" class="main__link" href="examples/Powell_responsive/index.html">Link</a>
+        </div>
+
+        <h2 id="main__heading--ovrigt" class="main__heading--2">Övrigt</h2>
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">Aside med scroll</h2>
+          <div class="main__tag">
+            <span class="main__tags">scroll</span>
+            <span class="main__tags">aside</span>
+            <span class="main__tags">main</span>
+          </div>
+          <p class="main__text">
+            Aside till vänster tillsammans med länkar. Main scrollar fritt från
+            aside och använder en mjuk scroll.
+          </p>
+
+          <a target="_blank" class="main__link" href="examples/aside-scroll/index.html">Link</a>
+        </div>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">Blur</h2>
+          <div class="main__tag">
+            <span class="main__tags">blur</span>
+            <span class="main__tags">position</span>
+            <span class="main__tags">absolute</span>
+          </div>
+          <p class="main__text">
+            Hantera bilder och bakgrunder tillsammans med text och blur.
+            Vanligtvis kan det vara svårt att skapa effekten blur när det kommer
+            till bild och text samtidigt. Här hittar du knep för att använda
+            position absolute för att lösa det.
+          </p>
+
+          <a target="_blank" class="main__link" href="examples/blur/index.html">Link</a>
+        </div>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">Carousel</h2>
+          <div class="main__tag">
+            <span class="main__tags">Carousel</span>
+            <span class="main__tags">Bildspel</span>
+            <span class="main__tags">Kevin Powell</span>
+          </div>
+          <p class="main__text">
+            Ett bildspel med prickar och pilar för navigation. Arbetet kommer från
+            Kevin Powell's youtube-kanal. Sidan innehåller delvis javascript eller
+            jquery.
+          </p>
+          <h3 class="main__heading--3">Är troligtvis ofärdig.</h3>
+
+          <a target="_blank" class="main__link" href="examples/carousel/index.html">Link</a>
+        </div>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">CV</h2>
+          <div class="main__tag">
+            <span class="main__tags">Grid</span>
+            <span class="main__tags">Psuedo-element</span>
+          </div>
+          <p class="main__text">
+            Enkel sida för att dela upp innehåll på olika sidor. Inget avancerat
+            men kan hjälpa med både grid och ::after (psuedo-element).
+          </p>
+          <a target="_blank" class="main__link" href="examples/cv/index.html">Link</a>
+        </div>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">Footer</h2>
+          <div class="main__tag">
+            <span class="main__tags">Tävling</span>
+            <span class="main__tags">Koncept</span>
+          </div>
+          <div class="main__tag">
+            <span class="main__tags">Footer</span>
+          </div>
+          <p class="main__text">
+            Exempel på en footer för en webbsida. Position fixed används för att
+            skapa effekten när man scrollar. Innehållet är indelat i olika
+            kollumner vilket get sidan sitt utseende. Arbetet med kollumner i CSS
+            är inte perfekt och går att göras bättre. All lorem ipsum på sidan är
+            till för utfyllnad för att tvinga fram effekten från scroll.
+          </p>
+          <a target="_blank" class="main__link" href="examples/footer/index.html">Link</a>
+        </div>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">Form</h2>
+          <div class="main__tag">
+            <span class="main__tags">Tävling</span>
+            <span class="main__tags">Koncept</span>
+          </div>
+          <div class="main__tag">
+            <span class="main__tags">Flex</span>
+            <span class="main__tags">Responsiv</span>
+          </div>
+          <p class="main__text">
+            Ett exempel på ett formulär. Sidan bygger på flex och är där med
+            responsiv utan media queries. Exemplet går därför att använda när det
+            kommer till responsivitet. Allt "viktigt" finns OVANFÖR kommentaren
+            "SITL FÖR SIDAN".
+          </p>
+          <a target="_blank" class="main__link" href="examples/form/index.html">Link</a>
+        </div>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">hamburger</h2>
+          <div class="main__tag">
+            <span class="main__tags">Meny</span>
+            <span class="main__tags">Hamburger</span>
+          </div>
+          <p class="main__text">Här hittar du en fungerade hamburger-meny till höger. Detta kommer från ett
+            exempel
+            på nätet och kan användas för att bygga en egen meny. Oftast sitter menyn på höger sida och detta går
+            att göra om man arbetar med koden. </p>
+          <a target="_blank" class="main__link" href="examples/hamburger/index.html">Link</a>
+        </div>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">hero, nav, parallax</h2>
+          <div class="main__tag">
+            <span class="main__tags">Koncept</span>
+          </div>
+          <p class="main__text">Ofärdig Design-idé. </p>
+          <a target="_blank" class="main__link" href="examples/hero with nav and parallax/index.html">Link</a>
+        </div>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">hide, show, jquery</h2>
+          <div class="main__tag">
+            <span class="main__tags">JQuery</span>
+          </div>
+          <p class="main__text">Försök till att få JQuery att byta innehåll på en sida. Funkar inte särskillt bra.
+          </p>
+          <a target="_blank" class="main__link" href="examples/hide and show with jquery/index.html">Link</a>
+        </div>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">hover button</h2>
+          <div class="main__tag">
+            <span class="main__tags">JQuery</span>
+            <span class="main__tags">Knappar</span>
+          </div>
+          <p class="main__text">Blandad design men med fokus på knappar och dess design. Lägg märke till att
+            innehållet på sidan ändras med hjälp av knapparna. Detta nås med hjälp av JQuery.</p>
+          <a target="_blank" class="main__link" href="examples/hover button 1/index.html">Link</a>
+        </div>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">JS_labb</h2>
+          <div class="main__tag">
+            <span class="main__tags">JavaScript</span>
+            <span class="main__tags">Övning</span>
+          </div>
+          <p class="main__text">En övning för JS. </p>
+          <a target="_blank" class="main__link" href="examples/JS_labb/index.htm">Link</a>
+        </div>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">matris</h2>
+          <div class="main__tag">
+            <span class="main__tags">Input</span>
+            <span class="main__tags">Psuedo-class</span>
+          </div>
+          <p class="main__text">Ett försök att förbättra Schoolsofts matris-system. Här hittar du exempel på input
+            med checked.</p>
+          <a target="_blank" class="main__link" href="examples/matris/idnex.html">Link</a>
+        </div>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">over-under</h2>
+          <div class="main__tag">
+            <span class="main__tags">Design</span>
+          </div>
+          <p class="main__text">Design-idé för att låta deisngen gå både över och under t.ex. en bild.</p>
+          <a target="_blank" class="main__link" href="examples/over-under/index.html">Link</a>
+        </div>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">site</h2>
+          <div class="main__tag">
+            <span class="main__tags">Koncept</span>
+          </div>
+          <p class="main__text">
+            Exempel på en sida som bygger på en massa olika grejer. Här kan du hitta olika ideer för
+            design och arbetssätt.
+          </p>
+          <a target="_blank" class="main__link" href="examples/site/index.html">Link</a>
+        </div>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">slides</h2>
+          <div class="main__tag">
+            <span class="main__tags">Länkar</span>
+            <span class="main__tags">ID</span>
+          </div>
+          <p class="main__text">
+            Med hjälp av interna länkar kan du länka till olika delar på samma webbsida. Klicka på
+            länkarna så kommer du
+            till ett annat område på sidan. Kan användas till många saker.
+          </p>
+          <a target="_blank" class="main__link" href="examples/slides/index.html">Link</a>
+        </div>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">template_hyper</h2>
+          <div class="main__tag">
+            <span class="main__tags">Mall</span>
+            <span class="main__tags">Funkar ej</span>
+          </div>
+          <h3 class="main__heading--3">FUNKAR EJ</h3>
+          <p class="main__text">
+            Mall som för nuvarande inte funkar.
+          </p>
+          <a target="_blank" class="main__link" href="examples/template_Hyper/index.html">Link</a>
+        </div>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">Tidningen</h2>
+          <div class="main__tag">
+            <span class="main__tags">Koncept</span>
+          </div>
+          <p class="main__text">
+            Gamal idé till arbete. Egen kopia av en lokaltidning.
+          </p>
+          <a target="_blank" class="main__link" href="examples/Tidningen/index.html">Link</a>
+        </div>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">waves</h2>
+          <div class="main__tag">
+            <span class="main__tags">CSS</span>
+            <span class="main__tags">Design</span>
+          </div>
+          <p class="main__text">CSS-design att låna</p>
+          <a target="_blank" class="main__link" href="examples/waves/index.html">Link</a>
+        </div>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">Webbtävlingen</h2>
+          <div class="main__tag">
+            <span class="main__tags">Tävling</span>
+            <span class="main__tags">Koncept</span>
+          </div>
+          <p class="main__text">Mallar för tävling kring julen. Ej färdiga sidor som funkar mer som
+            ideer och koncept.</p>
+          <a target="_blank" class="main__link" href="examples/Webbtävling/upp1.html">Link</a>
+          <a target="_blank" class="main__link" href="examples/Webbtävling/upp2.html">Link</a>
+          <a target="_blank" class="main__link" href="examples/Webbtävling/upp3.html">Link</a>
+        </div>
+
+        <div class="sec__wrapper">
+          <h2 class="main__heading--2">BEM</h2>
+          <div class="main__tag">
+            <span class="main__tags">BEM</span>
+            <span class="main__tags">Class</span>
+            <span class="main__tags">ID</span>
+          </div>
+          <p class="main__text">BEM är ett sätt att namnge dina klasser och IDn för att tydligare
+            beskriva ditt arbete och dina element. Du kan granska HTML- och
+            CSS-dokumentet för att titta på klasserna.</p>
+          <a target="_blank" class="main__link" href="examples/bem/index.html">Link</a>
+        </div>
+      </section>
+    </div>
+  </main>
 </body>
+
 </html>
