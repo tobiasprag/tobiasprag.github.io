@@ -9,13 +9,41 @@ body {
     height: 100%;
 }
 
-body {}
+.button {
+    border: 3px solid #232323;
+    border-radius: 100vw;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    padding: .5em 1em;
+}
+
+input {
+    display: none;
+}
+
+#button:checked~.left img {
+    content: url(pos3.png)
+}
+
+#button:checked~.center .sixnine {
+    display: unset;
+}
+
+#button:checked~.center .missionary {
+    display: none;
+}
+
+#button:checked~.right img {
+    content: url(pos4.png)
+}
+
 
 .container {
-    /* background-color: red; */
     display: flex;
     height: 100%;
 }
+
 
 .container>* {
     flex: 1 1 0;
@@ -41,9 +69,22 @@ body {}
 }
 
 .center h1 {
-    font-size: 900%;
+    /* font-size: 900%; */
+    font-size: calc(100% + 8vw);
     text-transform: uppercase;
+    background-image: url(sweden.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+.sixnine {
+    display: none;
+}
+
+
 
 span {
     margin-left: 1em;
@@ -53,10 +94,30 @@ span {
     /* background-color: green; */
 }
 
-h1 {
-    background-image: url(sweden.png);
-    background-repeat: repeat;
-    background-position: center;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+@media screen and (max-width: 500px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .center {
+        flex: 1 1 0;
+    }
+
+    .left,
+    .right {
+        flex: 0 0 0;
+    }
+
+    .container img {
+        width: 60vw;
+        /* outline: 1px solid red; */
+    }
+
+    .center h1 {
+        font-size: 60px;
+        background-size: cover 50%;
+    }
+
 }
