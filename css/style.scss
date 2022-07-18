@@ -1,49 +1,104 @@
 // @use "./vars";
 // @use "./font";
 
-@import url("https://fonts.googleapis.com/css?family=Caladea:400,700|Roboto:400,700,900&display=swap");
+// @import url("https://fonts.googleapis.com/css?family=Caladea:400,700|Roboto:400,700,900&display=swap");
 
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  // transition: ease-in-out 250ms;
 }
 
-// html {
-//   scroll-behavior: smooth;
-//   font-size: 62.5%;
-// }
+html {
+  //   scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+}
+
+ul {
+  list-style-type: none;
+}
 
 body {
   margin: 0;
-
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #232323;
 }
 
 .header {
-  background-color: red;
   display: flex;
-  padding: 2em 4em;
+  flex-direction: column;
 
-  > * {
+  >* {
     flex: 1 1 0;
   }
 
+  &__name {
+    font-size: 4rem;
+    text-align: center;
+    padding: 4rem 0 1rem;
+  }
 
   &__info {
-    text-align: right;
+    font-size: 1.5rem;
+
+    ul {
+      display: flex;
+
+      >* {
+        flex: 1 1 0;
+        text-align: center;
+        padding: 1rem 0;
+      }
+    }
   }
 }
 
-nav {
-  background-color: purple;
-  position: sticky;
-  position: -webkit-sticky;
-
-  top: 0;
+.intro {
+  padding: 2rem 1em;
+  // padding-bottom: 5rem;
+  // background-image: linear-gradient(white 70%, #232323);
 }
-main {
-  background-color: green;
-  // height: 200vh;
+
+.main {
+  background-color: #232323;
+  // box-shadow: 0 -10px 10px 10px #232323;
+  color: #fff;
+  padding: 2rem;
+
+  h2 {
+    padding: 1rem 0;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: auto 1fr;
+
+  >* {
+    padding-left: 1rem;
+  }
+
+  &__pos {
+    border-left: 1px solid #fff;
+    padding-bottom: 1rem;
+  }
+
+  &__desc {
+    border-left: 1px dashed #fff;
+    margin-bottom: 2rem;
+
+
+  }
 }
