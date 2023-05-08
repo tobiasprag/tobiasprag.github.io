@@ -28,7 +28,7 @@ header {
 
 }
 
-ul {
+.tracking ul {
     margin: 0;
     padding: 0;
 }
@@ -52,3 +52,9 @@ section {
     color: #fff;
     font-weight: bold;
 }
+
+
+  /* @mkedia (width < 400px) {
+        
+          }
+   */
