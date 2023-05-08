@@ -1,85 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;800&display=swap"
-        rel="stylesheet">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tobias Prag</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-    <header class="header">
-        <div class="header__name">
-            <h1>tobi <span>prag</span></h1>
-        </div>
-        <div class="header__info">
-            <ul>
-                <li>x.x@mail.com</li>
-                <li>000 000 00 00</li>
-                <li>street name 123</li>
-            </ul>
-        </div>
-
-    </header>
-    <div class="intro">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus commodi ut maxime fuga quos
-            voluptatibus quam temporibus earum fugit enim iure repudiandae cum ullam voluptas beatae, corrupti ea
-            saepe dolore?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus commodi ut maxime fuga quos
-            voluptatibus quam temporibus earum fugit enim iure repudiandae cum ullam voluptas beatae, corrupti ea
-            saepe dolore?</p>
+    <div class="tracking">
+        <ul>
+            <li class="tracker trackerOne">Heading area 1</li>
+            <li class="tracker trackerTwo">Heading area 2</li>
+            <li class="tracker trackerThree">Heading area 3</li>
+            <li class="tracker trackerFour">Heading area 4</li>
+        </ul>
     </div>
-    <main class="main">
-
-        <section class="main__exp">
-            <h2>Experiance</h2>
-            <div class="grid">
-                <div class="grid__pos">
-                    <h3>teacher, <br>upper secondary school</h3>
-                </div>
-                <div class="grid__desc">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa nemo ullam
-                        expedita exercitationem ut mollitia sint ad maiores. Libero nobis autem aspernatur sequi minima
-                        cumque facilis repudiandae corporis sit cum?</p>
-                </div>
-            </div>
+    <main>
+        <header>
+            <h1>Heading</h1>
+            <p>Sub Heading</p>
+        </header>
+        <section class="area areaOne">
+            <h2>Heading area 1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis architecto perspiciatis unde consequatur officia odio beatae ducimus dolores, temporibus placeat eligendi. Doloribus a odio nesciunt officiis doloremque omnis neque quia.</p>
         </section>
-        <section class="main__edu">
-            <h2>Education</h2>
-
-            <div class="grid">
-                <div class="grid__pos">
-                    <h3>name of education</h3>
-                </div>
-                <div class="grid__desc">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa nemo ullam
-                        expedita exercitationem ut mollitia sint ad maiores. Libero nobis autem aspernatur sequi minima
-                        cumque facilis repudiandae corporis sit cum?</p>
-                </div>
+        <section class="area areaTwo">
+            <h2>Heading area 2</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis architecto perspiciatis unde consequatur officia odio beatae ducimus dolores, temporibus placeat eligendi. Doloribus a odio nesciunt officiis doloremque omnis neque quia.</p>
         </section>
-        <section class="main__etc">
-            <h2>Other</h2>
-
-            <div class="grid">
-                <div class="grid__pos">
-                    <h3>name of other </h3>
-                </div>
-                <div class="grid__desc">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa nemo ullam
-                        expedita exercitationem ut mollitia sint ad maiores. Libero nobis autem aspernatur sequi minima
-                        cumque facilis repudiandae corporis sit cum?</p>
-                </div>
+        <section class="area areaThree">
+            <h2>Heading area 3</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis architecto perspiciatis unde consequatur officia odio beatae ducimus dolores, temporibus placeat eligendi. Doloribus a odio nesciunt officiis doloremque omnis neque quia.</p>
         </section>
-
+        <section class="area areaFour">
+            <h2>Heading area 4</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis architecto perspiciatis unde consequatur officia odio beatae ducimus dolores, temporibus placeat eligendi. Doloribus a odio nesciunt officiis doloremque omnis neque quia.</p>
+        </section>
     </main>
 
-</body>
-<!-- <script src="script.js"></script> -->
+    <script>
+        var colorDark = "#232323"
+        var colorLight = "#ffffff"
+        var highlightOne = document.querySelector(".trackerOne");
+        var highlightTwo = document.querySelector(".trackerTwo");
+        var highlightThree = document.querySelector(".trackerThree");
+        var highlightFour = document.querySelector(".trackerFour");
+        var findOne = document.querySelector(".areaOne");
+        var findTwo = document.querySelector(".areaTwo");
+        var findThree = document.querySelector(".areaThree");
+        var findFour = document.querySelector(".areaFour");
 
+        window.addEventListener('scroll', function(e){
+
+            if(findOne.getBoundingClientRect().top == 0) {
+                highlightOne.classList.add("active")
+            } else {
+                highlightOne.classList.remove("active")
+            }
+
+            if (findTwo.getBoundingClientRect().top == 0) {
+                highlightOne.classList.remove("active")
+                highlightTwo.classList.add("active")
+            } else {
+                highlightTwo.classList.remove("active")
+            }
+
+            if (findThree.getBoundingClientRect().top == 0) {
+                highlightTwo.classList.remove("active")
+                highlightThree.classList.add("active")
+            } else {
+                highlightThree.classList.remove("active")
+            }
+
+            if (findFour.getBoundingClientRect().top < 0) {
+                highlightThree.classList.remove("active")
+                highlightFour.classList.add("active")
+            } else {
+                highlightFour.classList.remove("active")
+            }
+
+            // FUNKAR MEN KOMMER BLI RÖRIG KOD I LÄNGEDEN
+            // if(findOne.getBoundingClientRect().top == 0) {
+            //     highlightOne.style.background = colorDark;
+            //     highlightOne.style.color = colorLight;
+            // } else {
+            //     highlightOne.style.background = colorLight;
+            //     highlightOne.style.color = colorDark;
+            // }
+            // if(findTwo.getBoundingClientRect().top == 0) {
+            //     highlightTwo.style.background = colorDark;
+            //     highlightTwo.style.color = colorLight;
+            //     highlightOne.style.background = colorLight;
+            //     highlightOne.style.color = colorDark;
+            // } else {
+            //     highlightTwo.style.background = colorLight;
+            //     highlightTwo.style.color = colorDark;
+            // }
+            // // SLUT PÅ RÖRIG KOD
+        }, { passive: true });
+    </script>
+</body>
 </html>
