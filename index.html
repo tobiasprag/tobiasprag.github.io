@@ -1,111 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Young+Serif&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js"></script>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="tracking">
-        <ul>
-            <li class="tracker trackerOne">Heading area 1</li>
-            <li class="tracker trackerTwo">Heading area 2</li>
-            <li class="tracker trackerThree">Heading area 3</li>
-            <li class="tracker trackerFour">Heading area 4</li>
+    <nav class="nav">
+        <img class="nav__bars" src="img/bars-solid.svg" alt="">
+        <ul class="nav__links">
+            <li class="nav__link">
+                <a href="#">Arbete</a>
+            </li>
+            <li class="nav__link">
+                <a href="#">Utbildning</a>
+            </li>
+            <li class="nav__link">
+                <a href="#">Övrigt</a>
+            </li>
+            <li class="nav__link">
+                <a href="#kontakt">Kontakt</a>
+            </li>
         </ul>
-    </div>
-    <main>
-        <header>
-            <h1>Heading</h1>
-            <p>Sub Heading</p>
-        </header>
-        <section class="area areaOne">
-            <h2 class="areaOne__heading">Heading area 1xxx</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis architecto perspiciatis unde consequatur officia odio beatae ducimus dolores, temporibus placeat eligendi. Doloribus a odio nesciunt officiis doloremque omnis neque quia.</p>
-        </section>
-        <section class="area areaTwo">
-            <h2>Heading area 2</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis architecto perspiciatis unde consequatur officia odio beatae ducimus dolores, temporibus placeat eligendi. Doloribus a odio nesciunt officiis doloremque omnis neque quia.</p>
-        </section>
-        <section class="area areaThree">
-            <h2>Heading area 3</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis architecto perspiciatis unde consequatur officia odio beatae ducimus dolores, temporibus placeat eligendi. Doloribus a odio nesciunt officiis doloremque omnis neque quia.</p>
-        </section>
-        <section class="area areaFour">
-            <h2>Heading area 4</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis architecto perspiciatis unde consequatur officia odio beatae ducimus dolores, temporibus placeat eligendi. Doloribus a odio nesciunt officiis doloremque omnis neque quia.</p>
-        </section>
+    </nav>
+    <header class="header">
+        <h1 class="header__heading">Tobi Prag</h1>
+        <img class="header__profile" src="img/profile.jpg" alt="Profile picture Tobias">
+    </header>
+    <main class="main">
+        <h2>Arbete</h2>
+        <h3>Yrkeslärare</h3>
+        <p><span>2015 - Nuvarande </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus consequatur
+            facilis dicta reiciendis veniam quasi, possimus dignissimos ut pariatur fuga, accusantium non veritatis
+            earum fugiat unde. Commodi quod aliquid ipsam?</p>
+        <h2>Utbildning</h2>
+        <h3>Specialpedagogik, 15HP</h3>
+        <p><span>2022 - 2023 </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus consequatur
+            facilis dicta reiciendis veniam quasi, possimus dignissimos ut pariatur fuga, accusantium non veritatis
+            earum fugiat unde. Commodi quod aliquid ipsam?</p>
+        <h2>Övrigt</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime accusantium quia sunt eius. Beatae molestiae
+            iure dicta impedit totam dolores a consequuntur, sapiente, fuga libero quidem officiis repudiandae quasi
+            sit.</p>
+        <h2 id="kontakt">Kontakt</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime accusantium quia sunt eius. Beatae molestiae
+            iure dicta impedit totam dolores a consequuntur, sapiente, fuga libero quidem officiis repudiandae quasi
+            sit.</p>
     </main>
 
     <script>
-        var colorDark = "#232323"
-        var colorLight = "#ffffff"
-        var highlightOne = document.querySelector(".trackerOne");
-        var highlightTwo = document.querySelector(".trackerTwo");
-        var highlightThree = document.querySelector(".trackerThree");
-        var highlightFour = document.querySelector(".trackerFour");
-        var findOne = document.querySelector(".areaOne");
-        var findTwo = document.querySelector(".areaTwo");
-        var findThree = document.querySelector(".areaThree");
-        var findFour = document.querySelector(".areaFour");
+        var bars = document.querySelector(".nav__bars")
+        var links = document.querySelector(".nav__links")
+        var body = document.querySelector("body")
+        var link = document.querySelectorAll(".nav__link")
 
 
 
-        window.addEventListener('scroll', function(e){
+        link.forEach((element) =>
+            element.addEventListener("click", e => {
+                links.classList.remove("showMenu")
+                body.classList.remove("overflow")
+                bars.classList.remove("zIndex")
+            })
+            // console.log(element)
+        );
 
-            if(findOne.getBoundingClientRect().top == 0) {
-                highlightOne.classList.add("active")
-            } else {
-                highlightOne.classList.remove("active")
-            }
+        bars.addEventListener("click", e => {
+            links.classList.toggle("showMenu")
+            bars.classList.toggle("zIndex")
+            body.classList.toggle("overflow")
 
-            if (findTwo.getBoundingClientRect().top == 0) {
-                highlightOne.classList.remove("active")
-                highlightTwo.classList.add("active")
-            } else {
-                highlightTwo.classList.remove("active")
-            }
 
-            if (findThree.getBoundingClientRect().top == 0) {
-                highlightTwo.classList.remove("active")
-                highlightThree.classList.add("active")
-            } else {
-                highlightThree.classList.remove("active")
-            }
-
-            if (findFour.getBoundingClientRect().top < 0) {
-                highlightThree.classList.remove("active")
-                highlightFour.classList.add("active")
-            } else {
-                highlightFour.classList.remove("active")
-            }
-
-            // FUNKAR MEN KOMMER BLI RÖRIG KOD I LÄNGEDEN
-            // if(findOne.getBoundingClientRect().top == 0) {
-            //     highlightOne.style.background = colorDark;
-            //     highlightOne.style.color = colorLight;
-            // } else {
-            //     highlightOne.style.background = colorLight;
-            //     highlightOne.style.color = colorDark;
-            // }
-            // if(findTwo.getBoundingClientRect().top == 0) {
-            //     highlightTwo.style.background = colorDark;
-            //     highlightTwo.style.color = colorLight;
-            //     highlightOne.style.background = colorLight;
-            //     highlightOne.style.color = colorDark;
-            // } else {
-            //     highlightTwo.style.background = colorLight;
-            //     highlightTwo.style.color = colorDark;
-            // }
-            // // SLUT PÅ RÖRIG KOD
-        }, { passive: true });
-
-        // allChildren.forEach((item) => item.classList.add("red"));
+        })
     </script>
 </body>
+
 </html>
+
+<!-- https://fontawesome.com/icons/bars?f=classic&s=solid -->
