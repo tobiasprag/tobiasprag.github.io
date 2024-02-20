@@ -116,6 +116,10 @@ header .bio__contact {
   background-color: #f686bd;
 }
 
+.other .kurser {
+  background-color: #bbbbbb;
+}
+
 .forprint {
   display: none;
 }/*# sourceMappingURL=style.css.map */
