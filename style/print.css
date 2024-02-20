@@ -1,0 +1,7 @@
+.forprint {
+  display: block !important;
+}
+
+details {
+  display: none;
+}
