@@ -43,6 +43,14 @@ main {
   padding: 5em 1em;
 }
 
+a {
+  font-weight: bold;
+  color: #3db4e7;
+}
+a:hover {
+  opacity: 0.8;
+}
+
 header .pp {
   width: 25%;
 }
@@ -55,14 +63,23 @@ header .header__bio h1 {
 }
 header .bio__contact {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+}
+header .bio__contact > * {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  cursor: pointer;
+}
+header .bio__contact .bio__icon {
+  height: 1rem;
 }
 
 .work__exp {
-  display: flex;
-}
-.work__exp > * {
-  padding: 1em;
+  display: grid;
+  grid-template-columns: max-content auto;
+  gap: 5rem;
+  margin-bottom: 2rem;
 }
 .work__exp .work__year {
   flex-basis: 25ch;
@@ -72,17 +89,20 @@ header .bio__contact {
   margin-top: 0;
   margin-bottom: 0;
 }
-.work__exp .work__desc h3:nth-child(2) {
+.work__exp .work__desc .work__title--sub {
   margin-top: 0;
   font-size: 1em;
   font-style: italic;
 }
+.work__exp .work__desc .work__text {
+  margin: 0;
+}
 
 .edu__exp {
-  display: flex;
-}
-.edu__exp > * {
-  padding: 1em;
+  display: grid;
+  grid-template-columns: minmax(10ch, max-content) auto;
+  gap: 5rem;
+  margin-bottom: 2rem;
 }
 .edu__exp .edu__year {
   flex-basis: 20ch;
@@ -91,10 +111,13 @@ header .bio__contact {
   margin-top: 0;
   margin-bottom: 0;
 }
-.edu__exp .edu__desc h3:nth-child(2) {
+.edu__exp .edu__desc .edu__title--sub {
   margin-top: 0;
   font-size: 1em;
   font-style: italic;
+}
+.edu__exp .edu__desc .edu__text {
+  margin: 0;
 }
 
 .other details {
@@ -115,7 +138,6 @@ header .bio__contact {
 .other .program {
   background-color: #f686bd;
 }
-
 .other .kurser {
   background-color: #f2f3ae;
 }

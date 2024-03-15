@@ -17,6 +17,15 @@ main {
   padding: 5em 1em;
 }
 
+a {
+  font-weight: bold;
+  color: #3db4e7;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 header {
   .pp {
     width: 25%;
@@ -32,17 +41,27 @@ header {
   }
   .bio__contact {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+
+    > * {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      cursor: pointer;
+    }
+
+    .bio__icon {
+      height: 1rem;
+    }
   }
 }
 
 .work {
   &__exp {
-    display: flex;
-
-    > * {
-      padding: 1em;
-    }
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 5rem;
+    margin-bottom: 2rem;
 
     .work__year {
       flex-basis: 25ch;
@@ -56,10 +75,14 @@ header {
         margin-bottom: 0;
       }
 
-      h3:nth-child(2) {
+      .work__title--sub {
         margin-top: 0;
         font-size: 1em;
         font-style: italic;
+      }
+
+      .work__text {
+        margin: 0;
       }
     }
   }
@@ -67,11 +90,10 @@ header {
 
 .edu {
   &__exp {
-    display: flex;
-
-    > * {
-      padding: 1em;
-    }
+    display: grid;
+    grid-template-columns: minmax(10ch, max-content) auto;
+    gap: 5rem;
+    margin-bottom: 2rem;
 
     .edu__year {
       flex-basis: 20ch;
@@ -84,10 +106,14 @@ header {
         margin-bottom: 0;
       }
 
-      h3:nth-child(2) {
+      .edu__title--sub {
         margin-top: 0;
         font-size: 1em;
         font-style: italic;
+      }
+
+      .edu__text {
+        margin: 0;
       }
     }
   }
@@ -115,6 +141,16 @@ header {
   }
   .kurser {
     background-color: #f2f3ae;
+  }
+}
+
+.class {
+  &__exp {
+    // display: grid;
+    // grid: repeat(3, auto) / 1fr 1fr;
+  }
+  &__header {
+    // grid-column: 1 / -1;
   }
 }
 
