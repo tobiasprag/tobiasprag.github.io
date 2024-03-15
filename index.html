@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/print.css" media="print">
-    <script src="script/script.js"></script>
+    <script src="script/script.js" async></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tobias Prag</title>
@@ -23,26 +23,37 @@
                 <img src="img/profile2.jpg" alt="Profile Tobias Prag" height="180" width="180">
             </div>
             <div class="header__bio">
-                <h1>Tobias Prag</h1>
+                <div class="header__nav">
+                    <h1>Tobias Prag</h1>
+                    <ul class="header__links">
+                        <li class="header__links">
+                            <a href="#">Mitt CV</a>
+                        </li>
+                        <li class="header__links">
+                            <a href="pages/mywork.html">Mina arbetssätt</a>
+                        </li>
+
+                    </ul>
+                </div>
+
                 <p>Yrkeslärare på el- och energiprogrammet med inriktning mot dator- och kommunikationsteknik.
                     Undervisar i kurser som datorteknik 1a, webbutveckling och gymnasiearbete. </p>
                 <ul class="bio__contact">
-                    <li class="bio__phone bio__toggle">
-                        <!-- <img class="bio__icon" src="img/phone-solid.svg">Telefon -->
-                    </li>
-                    <li class="bio__email bio__toggle">
-                        <!-- <img class="bio__icon" src="img/envelope-solid.svg">E-post -->
-                    </li>
-                    <li class="bio__cv">
-                        <a href="#">Mitt CV</a>
-                    </li>
-                    <li class="bio__city bio__toggle">
-                        <!-- <img class="bio__icon" src="img/house-solid.svg">Stad -->
-                    </li>
-                    <li class="bio__age"></li>
-                    <li class="bio__work">
-                        <a href="pages/mywork.html">Mina arbetssätt</a>
-                    </li>
+                    <li class="bio__toggle">Kontakta mig</li>
+                    <li class="bio__info bio__display">Om du besöker den här sidan så har du antagligen
+                        fått länken skickad till dig. Svara på mailet för att kontakta mig. </li>
+                    <!-- <li class="bio__phone bio__display">
+                            <img class="bio__icon" src="../img/phone-solid.svg">Telefon
+                        </li>
+                        <li class="bio__email bio__display">
+                            <img class="bio__icon" src="../img/envelope-solid.svg">E-post
+                        </li>
+    
+                        <li class="bio__city bio__display">
+                            <img class="bio__icon" src="../img/house-solid.svg">Stad
+                        </li> -->
+                    <!-- <li class="bio__age"></li> -->
+
                 </ul>
             </div>
         </header>
@@ -194,6 +205,11 @@
 
         </section>
     </main>
+
+    <script>
+
+
+    </script>
 </body>
 
 </html>
