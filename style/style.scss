@@ -59,12 +59,12 @@ header {
   }
   .bio__contact {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, max-content);
 
     > * {
       display: flex;
       align-items: center;
-      gap: 1em;
+      gap: 0.5em;
       transition: ease-in-out 500ms;
     }
     .bio__toggle {
@@ -74,6 +74,11 @@ header {
 
     .bio__display {
       opacity: 0;
+      padding-right: 1.5rem;
+    }
+
+    .bio__show {
+      opacity: 1;
     }
     .bio__info {
       grid-column: 1 / -1;
@@ -95,7 +100,6 @@ header {
     .work__year {
       flex-basis: 25ch;
       flex-grow: 1;
-      // flex-shrink: 0;
     }
 
     .work__desc {
@@ -126,7 +130,6 @@ header {
 
     .edu__year {
       flex-basis: 20ch;
-      // flex-shrink: 0;
     }
 
     .edu__desc {
@@ -187,15 +190,18 @@ header {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .bio__contact {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
 @media screen and (max-width: 365px) {
   main {
     width: 100vw;
   }
 
-  .work__exp,
-  .edu__exp {
-    gap: 1rem;
-  }
   .header__nav {
     h1 {
       line-height: 1;
@@ -203,5 +209,10 @@ header {
     .header__links {
       padding: 0;
     }
+  }
+
+  .work__exp,
+  .edu__exp {
+    gap: 1rem;
   }
 }

@@ -78,12 +78,12 @@ header .header__links {
 }
 header .bio__contact {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, max-content);
 }
 header .bio__contact > * {
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 0.5em;
   transition: ease-in-out 500ms;
 }
 header .bio__contact .bio__toggle {
@@ -92,6 +92,10 @@ header .bio__contact .bio__toggle {
 }
 header .bio__contact .bio__display {
   opacity: 0;
+  padding-right: 1.5rem;
+}
+header .bio__contact .bio__show {
+  opacity: 1;
 }
 header .bio__contact .bio__info {
   grid-column: 1/-1;
@@ -181,18 +185,24 @@ header .bio__contact .bio__icon {
     gap: 2.5rem;
   }
 }
+@media screen and (max-width: 450px) {
+  .bio__contact {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
 @media screen and (max-width: 365px) {
   main {
     width: 100vw;
-  }
-  .work__exp,
-  .edu__exp {
-    gap: 1rem;
   }
   .header__nav h1 {
     line-height: 1;
   }
   .header__nav .header__links {
     padding: 0;
+  }
+  .work__exp,
+  .edu__exp {
+    gap: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */

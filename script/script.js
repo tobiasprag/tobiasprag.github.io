@@ -3,6 +3,6 @@ const bioDisplay = document.querySelectorAll(".bio__display");
 
 bioToggle.addEventListener("click", () => {
   bioDisplay.forEach((display) => {
-    display.classList.toggle("bio__display");
+    display.classList.toggle("bio__show");
   });
 });
