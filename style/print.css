@@ -10,6 +10,10 @@ header {
   width: 100%;
 }
 
+.pp img {
+  min-width: 180px;
+}
+
 .header__bio {
   padding: 0 2em;
 }
