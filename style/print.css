@@ -8,10 +8,14 @@ header {
 
 .pp {
   width: 100%;
+  min-width: 180px;
 }
 
 .pp img {
   width: 180px;
+  min-width: 180px;
+  height: 180px;
+  min-height: 180px;
   aspect-ratio: 1;
 }
 
