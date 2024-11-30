@@ -121,6 +121,7 @@ header .bio__contact .bio__icon {
 .work__exp .work__desc .work__title--sub {
   margin-top: 0;
   font-size: 1em;
+  font-style: italic;
 }
 .work__exp .work__desc .work__text {
   margin: 0;
