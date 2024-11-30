@@ -171,6 +171,11 @@ header {
   }
   .kurser {
     background-color: #f2f3ae;
+
+    .none-item {
+      list-style: none;
+      margin-left: -16px;
+    }
   }
 }
 

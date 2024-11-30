@@ -168,6 +168,10 @@ header .bio__contact .bio__icon {
 .other .kurser {
   background-color: #f2f3ae;
 }
+.other .kurser .none-item {
+  list-style: none;
+  margin-left: -16px;
+}
 
 .forprint {
   display: none;
