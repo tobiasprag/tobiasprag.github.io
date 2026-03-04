@@ -1,0 +1,5 @@
+{
+  "name": "HTML/CSS Generator",
+  "description": "A simple block-based HTML and CSS generator allowing users to format headings and text blocks without writing code.",
+  "requestFramePermissions": []
+}
